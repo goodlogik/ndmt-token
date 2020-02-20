@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.7.0;
 
-contract MediaToken {
+contract Token {
     // owner of the token contract
     address public owner;
 
