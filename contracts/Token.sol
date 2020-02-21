@@ -25,7 +25,9 @@ contract Token {
     // set the owner and set the initial number of currentSupply to zero
     constructor() public {
         owner = msg.sender;
-        currentSupply = 0;
+
+        // set maximum token supply to 12.5 billion
+        currentSupply = 12500000000;
     }
 
     /** Approve spender to spend tokens from caller's account.
@@ -39,13 +41,6 @@ contract Token {
         emit Approval(msg.sender, spender, tokens);
         return true;
     }
-
-    // mint additional tokens
-    function mint(uint numberOfTokens) public onlyOwner {
-        tokenBalances[msg.sender] += numberOfTokens;
-        currentSupply += numberOfTokens;
-    }
-
 
     // Required ERC-20 Functions
 
