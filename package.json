@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.31"
+  },
   "devDependencies": {
     "truffle-flattener": "^1.4.2"
   },
