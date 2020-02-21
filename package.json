@@ -1,0 +1,31 @@
+{
+  "name": "standard-media-token",
+  "version": "1.0.0",
+  "description": "ERC20 based token powering GoodLogik's distributed media network.",
+  "main": "post_create_script.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "truffle-flattener": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodlogik/standard-media-token.git"
+  },
+  "keywords": [
+    "erc20",
+    "token",
+    "media"
+  ],
+  "author": "Leonid Medovyy",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/goodlogik/standard-media-token/issues"
+  },
+  "homepage": "https://github.com/goodlogik/standard-media-token#readme"
+}

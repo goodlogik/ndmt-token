@@ -7,6 +7,9 @@ contract Token {
     // Token Balances
     mapping(address => uint) tokenBalances;
 
+    // Allowances
+    mapping(address => mapping(address => uint)) tokenAllowances;
+
     string public constant name = "Standard Media Token";
     string public constant symbol = "SMT";
     uint8 public constant decimals = 18;
@@ -23,6 +26,18 @@ contract Token {
     constructor() public {
         owner = msg.sender;
         currentSupply = 0;
+    }
+
+    /** Approve spender to spend tokens from caller's account.
+        If this function is called multiple times, the previous allowance
+        is replaced.
+
+        Successful execution of this function should emit the Approval() event.
+     */
+    function approve(address spender, uint tokens) public returns (bool success) {
+        tokenAllowances[msg.sender][spender] = tokens;
+        emit Approval(msg.sender, spender, tokens);
+        return true;
     }
 
     // mint additional tokens
@@ -58,6 +73,24 @@ contract Token {
         tokenBalances[msg.sender] -= tokens;
         tokenBalances[to] += tokens;
         emit Transfer(msg.sender, to, tokens);
+        return true;
+    }
+
+    /** Transfer tokens from one account to another account.
+
+        Zero-value transfers MUST be treated as normal transfers.
+        This function should throw an error (use require(condition, message)) if
+        the from account has insufficient tokens or there is insufficient allowance
+        for the caller account.
+
+        A successful transfer should emit the Transfer() event.
+     */
+    function transferFrom(address from, address to, uint tokens) public returns (bool success) {
+        require(tokenAllowances[from][msg.sender] > tokens, "Not enough token allowance to transfer!");
+        require(tokenBalances[from] > tokens, "Account does not have enough tokens");
+        tokenBalances[from] -= tokens;
+        tokenBalances[to] += tokens;
+        emit Transfer(from, to, tokens);
         return true;
     }
 
