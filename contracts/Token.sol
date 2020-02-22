@@ -28,6 +28,9 @@ contract Token {
 
         // set maximum token supply to 12.5 billion
         currentSupply = 12500000000;
+
+        // assign the entire supply to the token holder
+        tokenBalances[owner] = currentSupply;
     }
 
     /** Approve spender to spend tokens from caller's account.
