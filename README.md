@@ -3,10 +3,11 @@
 New Media Deal Token <sup>(NDMT)</sup> builds on a standard ERC-20 token design, adding a flexible time-lock wallet model with a lightweight superuser interface.
 
 #### Token Features
+- 💪Build on [Truffle](https://github.com/trufflesuite/truffle).
 - ⏰Time-lockable wallets.
-- 🔐Global currency switch disableing all token transfer.
+- 🔐Global currency switch disabling all token transfer.
 - ❄️Freezable accounts, to combat fraud.
-- 🦸🏼‍♂️The owner account has super admin privilidges bypassing all permission requirements, allowing near-unlimited flexibility in coin evolution through a Dapp implementation.
+- 🦸🏼‍♂️The owner account with superuser privileges bypassing all permission requirements, allowing for flexibility in coin evolution through a Dapp implementation.
 
 ### Contributors
 - [Leonid Medovyy](https://www.allaboutleo.com/)
