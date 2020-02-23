@@ -7,7 +7,7 @@ New Media Deal Token <sup>(NDMT)</sup> builds on an ERC-20 token specification w
 - ⏰Time-lockable wallets.
 - 🔐Global currency switch disabling all token transfer.
 - ❄️Freezable accounts, to combat fraud.
-- 🦸🏼‍♂️The owner account with superuser privileges bypasses all permission requirements, allowing for flexibility in a token logic via a Dapp implementation.
+- 🦸🏼‍♂️The owner account with superuser privileges bypasses all permission requirements (allowing for greater flexibility in a token logic via a Dapp implementation.
 
 ### Contributors
 - [Leonid Medovyy](https://www.allaboutleo.com/)
