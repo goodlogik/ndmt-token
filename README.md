@@ -1,9 +1,9 @@
 # New Deal Media Token (NDMT)
 
-New Media Deal Token <sup>(NDMT)</sup> builds on a standard ERC-20 token design, adding a flexible time-lock wallet model with a lightweight superuser interface.
+New Media Deal Token <sup>(NDMT)</sup> builds on ERC-20 token specification, adding a flexible time-lock model and a lightweight superuser interface.
 
 #### Token Features
-- 💪Build on [Truffle](https://github.com/trufflesuite/truffle).
+- 💪Built on [Truffle](https://github.com/trufflesuite/truffle).
 - ⏰Time-lockable wallets.
 - 🔐Global currency switch disabling all token transfer.
 - ❄️Freezable accounts, to combat fraud.
