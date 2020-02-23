@@ -1,5 +1,9 @@
 pragma solidity >=0.4.22 <0.7.0;
 
+import './SafeMath.sol';
+import './ERC20.sol';
+
+
 contract Token {
     // owner of the token contract
     address public owner;
