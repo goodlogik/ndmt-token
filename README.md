@@ -1,6 +1,6 @@
 # Standard Media Token 
 
-#####(ERC20-TS)
+##### (ERC20-TS)
 
 The token behind the 
 
