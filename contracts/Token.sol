@@ -22,15 +22,18 @@ contract Token {
         _;
     }
 
-    // set the owner and set the initial number of currentSupply to zero
+    // set the owner and set the initial number of currentSupply
     constructor() public {
         owner = msg.sender;
 
         // set maximum token supply to 12.5 billion
-        currentSupply = 12500000000;
+        currentSupply = 12500000000*(uint256(10) ** decimals);
 
         // assign the entire supply to the token holder
         tokenBalances[owner] = currentSupply;
+
+        //
+        emit Transfer(address(0), owner, currentSupply);
     }
 
     /** Approve spender to spend tokens from caller's account.
