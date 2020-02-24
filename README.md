@@ -1,4 +1,4 @@
-# 💰 New Deal Media Token (NDMT)
+# New Deal Media Token <sup>(NDMT)</sup>
 
 New Media Deal Token <sup>(NDMT)</sup> builds on an ERC-20 token specification with a flexible time-lock model and a lightweight superuser interface.
 
